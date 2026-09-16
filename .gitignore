@@ -1,0 +1,7 @@
+node_modules
+.sites-runtime/
+.env
+*.zip
+*.log
+dist/vendor/
+dist/fonts/

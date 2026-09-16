@@ -1,0 +1,11 @@
+{
+ "name":"folio-online-book-reader",
+ "version":"1.0.0",
+ "private":true,
+ "type":"module",
+ "description":"A browser-local EPUB, PDF and text reader inspired by Impeccable's visual language.",
+ "scripts":{"setup":"node scripts/setup.mjs","start":"node scripts/serve.mjs","test":"node tests/integration.mjs","check":"node --check dist/app.js && node --check dist/parsers.js && node --check dist/storage.js && node --check dist/sw.js"},
+ "dependencies":{"dompurify":"3.4.15","jszip":"3.10.2","pdfjs-dist":"6.3.289"},
+ "devDependencies":{"fake-indexeddb":"6.2.5","jsdom":"30.0.1"},
+ "engines":{"node":">=22.13.0"}
+}
