@@ -1,4 +1,4 @@
-# Folio — Online Book Reader
+# Chang Book Reader
 
 A private, browser-local reading library with a Vietnamese interface. The visual direction is inspired by [Impeccable](https://impeccable.style/): neutral paper surfaces, near-black typography, gold accents, fine rules and restrained controls. Be Vietnam Pro adapts the sans-serif direction for full Vietnamese coverage. Reading features take inspiration from Apple Books; this is an independent web application, not an Apple product or a complete Apple Books clone.
 
@@ -16,13 +16,17 @@ Open http://localhost:3000. Serve the `dist/` folder over HTTPS in production. T
 
 ## Features
 
+- BookForge Studio (Xưởng tạo sách số): Soạn thảo hoặc chuyển đổi bản thảo `.txt`, `.md` thành sách ngay trên trình duyệt (client-side).
+- Xuất đa định dạng sách: EPUB 3 (chuẩn mục lục TOC & metadata), Microsoft Word (.docx), FictionBook 2.0 (.fb2), HTML tự chứa, RTF và TXT UTF-8.
+- Đưa trực tiếp sách vừa tạo vào thư viện chỉ với 1 click để bắt đầu đọc ngay lập tức.
+- Chuyển đổi sách TXT/Markdown/HTML/FB2 có sẵn trong thư viện sang EPUB 3 hoặc Word (.docx).
 - Import multiple books or drop files onto the library. SHA-256 content hashes prevent duplicates.
 - EPUB: metadata, raster covers and illustrations, reading order, EPUB 2/3 table of contents, chapter links.
 - PDF: original page rendering with PDF.js, searchable extracted text, optional text reading mode.
 - TXT (UTF-8), basic Markdown, sanitized HTML, and FB2.
 - Grid/list library, title/author search, sorting, favorites, reading/finished filters, custom collections.
 - Resume chapter and scroll position; bookmarks; text highlighting; editable notes; full-book text search.
-- White, sepia, and night reader themes; font family, font size, line spacing and page width controls.
+- White, sepia, and night reader themes; font family (Georgia, Palatino, Charter, Be Vietnam Pro, System UI, Mono), font size, line spacing and page width controls.
 - Arrow keys / Page Up / Page Down and horizontal touch gestures; fullscreen when supported.
 - Daily reading goal, measured while the reader is visible and recently active (three-minute inactivity cutoff).
 - Download original files; export and restore a ZIP containing books, progress, bookmarks, notes, collections and preferences. Existing duplicate books are kept unchanged during restore.
@@ -52,6 +56,7 @@ Browser storage belongs to the exact origin. Changing the domain, browser profil
 dist/index.html       Accessible app shell
 dist/styles.css       Library and reader design, responsive styles
 dist/app.js           UI, reading state, search, notes, backup, WebMCP
+dist/forge.js         BookForge Studio: client-side multi-format generator
 dist/parsers.js       EPUB/PDF/TXT/MD/HTML/FB2 parsing and sanitization
 dist/storage.js       IndexedDB transactions
 dist/sw.js            Offline asset cache
@@ -60,6 +65,7 @@ dist/fonts/           Self-hosted Be Vietnam Pro fonts
 scripts/setup.mjs     Prepare static vendor assets
 scripts/serve.mjs     Local development server
 tests/integration.mjs DOM and storage integration checks
+tests/forge-test.mjs  BookForge multi-format conversion checks
 ```
 
 `dist/` contains authored source, not disposable build output. Do not delete it as build cleanup.
