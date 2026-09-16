@@ -38,7 +38,7 @@ Browser storage belongs to the exact origin. Changing the domain, browser profil
 
 ## Scope and limits
 
-- Files: up to 50 MB each. ZIP expanded size guard: 160 MB. PDF: at most 2,500 pages. Backup import: at most 200 MB compressed and 160 MB expanded.
+- Files: up to 50 MB each. ZIP expanded size guard: 160 MB. PDF: at most 2,500 pages. Backup export: up to 150 MB of original files. Backup import: at most 200 MB compressed and 160 MB expanded.
 - No DRM, MOBI/AZW, store, cloud sync, audiobook library, OCR, or cross-device handoff.
 - EPUB publisher CSS, scripts, embedded media, SVG, remote images and active content are intentionally not rendered. Semantic text and common raster images are retained. Complex fixed-layout or vertical-writing EPUBs may not preserve their layout.
 - PDF text mode depends on an existing text layer. Text reading order can differ from the original page. Highlighting/notes apply in PDF text mode, not directly on the canvas. Scanned PDFs remain readable in page mode but are not OCR-searchable.
