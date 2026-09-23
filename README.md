@@ -42,6 +42,7 @@ Một thư viện đọc sách riêng tư, lưu trữ hoàn toàn trên trình d
 - **Chế độ xem linh hoạt**: Chuyển đổi giữa dạng lưới bìa sách (Grid) và dạng danh sách chi tiết (List).
 - **Phân loại & Bộ lọc**: Tìm kiếm tức thì theo tên sách hoặc tác giả; sắp xếp theo thời gian đọc gần nhất, ngày thêm, hoặc bảng chữ cái A–Z; phân nhóm theo trạng thái *Đang đọc*, *Yêu thích*, hoặc *Đã đọc*.
 - **Bộ sưu tập cá nhân (Collections)**: Tự tạo các kệ sách theo chủ đề tùy ý.
+- **Chỉnh sửa sách đã nhập**: Mở menu dấu ba chấm của sách để đổi tên, tác giả hoặc chọn ảnh bìa PNG/JPEG/WebP/GIF (tối đa 2 MB). Có thể bỏ ảnh để dùng bìa chữ. Thay đổi được lưu trong trình duyệt và đi cùng bản sao lưu ZIP; tệp sách gốc không bị sửa.
 - **Đồng hồ mục tiêu đọc sách (Daily Reading Goal)**: Theo dõi số phút đọc thực tế mỗi ngày; tự động dừng đo khi không có tương tác quá 3 phút.
 
 ### 6. 🔒 Tuyệt đối riêng tư & Lưu trữ cục bộ (Local-First)
